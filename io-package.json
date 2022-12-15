@@ -1,109 +1,104 @@
 {
-    "common": {
-        "name": "gridradar",
-        "version": "0.0.1",
-        "news": {
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版",
-                "uk": "початковий випуск"
-            }
-        },
-        "title": "Gridradar",
-        "titleLang": {
-            "en": "Gridradar",
-            "de": "Gridradar",
-            "ru": "Гридрадар",
-            "pt": "Gridradar",
-            "nl": "raster",
-            "fr": "Grille radar",
-            "it": "Gridradar",
-            "es": "Cuadrícula",
-            "pl": "Gridradar",
-            "zh-cn": "网格雷达",
-            "uk": "Гридрадар"
-        },
-        "desc": {
-            "en": "Frequency Wide Area Monitoring",
-            "de": "Frequenzweite Überwachung",
-            "ru": "Мониторинг широкого диапазона частот",
-            "pt": "Monitoramento de área ampla de frequência",
-            "nl": "Frequentie Wide Area Monitoring",
-            "fr": "Surveillance de large zone de fréquence",
-            "it": "Monitoraggio di un'ampia area di frequenza",
-            "es": "Monitoreo de área amplia de frecuencia",
-            "pl": "Monitorowanie szerokiego obszaru częstotliwości",
-            "zh-cn": "频率广域监测",
-            "uk": "Частотний моніторинг широкого діапазону"
-        },
-        "authors": [
-            "ice987987 <mathias.frei1@gmail.com>"
-        ],
-        "keywords": [
-            "gridradar"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "icon": "gridradar.svg",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/ice987987/ioBroker.gridradar/main/admin/gridradar.svg",
-        "readme": "https://github.com/ice987987/ioBroker.gridradar/blob/main/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "misc-data",
-        "compact": true,
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=4.0.23"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=6.2.21"
-            }
-        ]
-    },
-    "native": {
-        "applicationKey": "",
-        "requestInterval": 3600,
-        "metricKey": "frequency-ucte-median-1s"
-    },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Device or service connected",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
-    ]
+	"common": {
+		"name": "gridradar",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版",
+				"uk": "початковий випуск"
+			}
+		},
+		"titleLang": {
+			"en": "Gridradar",
+			"de": "Gridradar",
+			"ru": "Гридрадар",
+			"pt": "Gridradar",
+			"nl": "raster",
+			"fr": "Grille radar",
+			"it": "Gridradar",
+			"es": "Cuadrícula",
+			"pl": "Gridradar",
+			"zh-cn": "网格雷达",
+			"uk": "Гридрадар"
+		},
+		"desc": {
+			"en": "Frequency Wide Area Monitoring",
+			"de": "Frequenzweite Überwachung",
+			"ru": "Мониторинг широкого диапазона частот",
+			"pt": "Monitoramento de área ampla de frequência",
+			"nl": "Frequentie Wide Area Monitoring",
+			"fr": "Surveillance de large zone de fréquence",
+			"it": "Monitoraggio di un'ampia area di frequenza",
+			"es": "Monitoreo de área amplia de frecuencia",
+			"pl": "Monitorowanie szerokiego obszaru częstotliwości",
+			"zh-cn": "频率广域监测",
+			"uk": "Частотний моніторинг широкого діапазону"
+		},
+		"authors": ["ice987987 <mathias.frei1@gmail.com>"],
+		"keywords": ["gridradar"],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "gridradar.svg",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/ice987987/ioBroker.gridradar/main/admin/gridradar.svg",
+		"readme": "https://github.com/ice987987/ioBroker.gridradar/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "misc-data",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=4.0.23"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=6.2.21"
+			}
+		]
+	},
+	"native": {
+		"applicationKey": "",
+		"requestInterval": 3600,
+		"metricKey": "frequency-ucte-median-1s"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
 }
