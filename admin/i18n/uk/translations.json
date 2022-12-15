@@ -1,0 +1,7 @@
+{
+    "applicationKey": "Ключ програми",
+    "applicationKeyHint": "Отримайте свій «ключ програми Gridradar» <a href='https://service.gridradar.net/login.php' target='_blank'>тут</a>. (формат: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)",
+    "requestInterval": "Інтервал часу для отримання значень",
+    "requestIntervalHint": "у секундах (мін. 10 с; макс. 3600 с)",
+    "metricKeys": "Метричні ключі"
+}

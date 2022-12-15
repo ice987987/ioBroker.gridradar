@@ -1,0 +1,7 @@
+{
+    "applicationKey": "Clave de aplicación",
+    "applicationKeyHint": "Obtenga su 'Clave de aplicación Gridradar' <a href='https://service.gridradar.net/login.php' target='_blank'>aquí</a>. (formato: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)",
+    "requestInterval": "Intervalo de tiempo para recuperar valores",
+    "requestIntervalHint": "en segundos (mín. 10 s; máx. 3600 s)",
+    "metricKeys": "Claves métricas"
+}

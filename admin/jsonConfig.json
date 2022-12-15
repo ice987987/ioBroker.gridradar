@@ -1,0 +1,63 @@
+{
+	"type": "panel",
+	"i18n": true,
+	"items": {
+		"applicationKey": {
+			"newLine": true,
+			"type": "password",
+			"label": "applicationKey",
+			"help": "applicationKeyHint",
+			"validator": "/[a-zA-Z0-9]{50}/.test(data.applicationKey)",
+			"validatorNoSaveOnError": true,
+			"visible": true,
+			"repeat": false,
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 8
+		},
+		"requestInterval": {
+			"newLine": true,
+			"type": "number",
+			"label": "requestInterval",
+			"help": "requestIntervalHint",
+			"min": 10,
+			"max": 3600,
+			"step": 1,
+			"validator": "data.requestInterval >= 10 && data.requestInterval <= 3600",
+			"validatorNoSaveOnError": true,
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 8
+		},
+		"metricKey": {
+			"newLine": true,
+			"type": "select",
+			"label": "metricKeys",
+			"options": [
+				{ "label": { "en": "Median of the pmu 1 second mean frequencies" }, "value": "frequency-ucte-median-1s" },
+				{ "label": { "en": "Network time deviation of the UCTE power grid" }, "value": "net-time" }
+			]
+		},
+		"_divider": {
+			"newLine": true,
+			"type": "divider",
+			"color": "primary",
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 8
+		},
+		"_helpLink": {
+			"newLine": true,
+			"type": "staticLink",
+			"text": "Readme",
+			"noTranslation": true,
+			"variant": "contained",
+			"color": "primary",
+			"button": true,
+			"href": "https://github.com/ice987987/ioBroker.gridradar/blob/main/README.md"
+		}
+	}
+}

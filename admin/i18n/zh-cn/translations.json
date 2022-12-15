@@ -1,0 +1,7 @@
+{
+    "applicationKey": "应用密钥",
+    "applicationKeyHint": "在<a href='https://service.gridradar.net/login.php' target='_blank'>此处</a>获取您的“Gridradar 应用程序密钥”。 （格式：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx）",
+    "requestInterval": "检索值的时间间隔",
+    "requestIntervalHint": "以秒为单位（最少 10 秒；最多 3600 秒）",
+    "metricKeys": "公制键"
+}
