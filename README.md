@@ -19,7 +19,7 @@
 
 This adapter allows you to get the "Median of the pmu 1 second mean frequencies" or "Network time deviation of the UCTE power grid" via gridradar.net.
 
-### DISCLAIMER
+## Disclaimer
 
 All product and company names or logos are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them or any associated subsidiaries! This personal project is maintained in spare time and has no business goal. Gridradar is a trademark of MagnaGen GmbH, D-86938 Schondorf.
 
@@ -36,7 +36,7 @@ All product and company names or logos are trademarks™ or registered® tradema
 
 ## Changelog
 
-### 0.0.1
+### 0.0.1 (15.12.2022)
 
 -   (ice987987) initial release
 
