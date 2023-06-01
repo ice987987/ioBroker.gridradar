@@ -9,7 +9,7 @@
 const utils = require('@iobroker/adapter-core');
 
 // Load your modules here, e.g.:
-const axios = require('axios');
+const axios = require('axios').default;
 
 // variables
 const isValidApplicationKey = /[a-zA-Z0-9]{50}/; // format: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -26,8 +26,6 @@ class Gridradar extends utils.Adapter {
 		this.on('ready', this.onReady.bind(this));
 		this.on('stateChange', this.onStateChange.bind(this));
 		this.on('unload', this.onUnload.bind(this));
-
-		this.requestClient = axios.create();
 	}
 
 	/**
@@ -90,7 +88,7 @@ class Gridradar extends utils.Adapter {
 	}
 
 	async getData() {
-		this.requestClient({
+		axios({
 			method: 'GET',
 			url: 'https://api.gridradar.net/query',
 			params: {
