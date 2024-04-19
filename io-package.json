@@ -30,7 +30,17 @@
                 "zh-cn": "中断：需要 node.js >= v16.0，js-controller >= v4.0.24 和 admin >= v6.3.5，依赖项已更新"
             },
             "0.0.3-beta.1": {
-                "en": "BREAKING: js-controller >= v5, admin >= v6.3.5 and node.js >= v18 is required"
+                "en": "BREAKING: js-controller >= v5, admin >= v6.3.5 and node.js >= v18 is required",
+                "de": "BREAKING: js-controller >= v5, admin >= v6.3.5 und node.js >= v18 sind erforderlich",
+                "ru": "СРОЧНО: требуется js-controller >= v5, admin >= v6.3.5 и node.js >= v18.",
+                "pt": "QUEBRANDO: js-controller >= v5, admin >= v6.3.5 e node.js >= v18 são necessários",
+                "nl": "BREAKING: js-controller >= v5, admin >= v6.3.5 en node.js >= v18 is vereist",
+                "fr": "RUPTURE : js-controller >= v5, admin >= v6.3.5 et node.js >= v18 sont requis",
+                "it": "BREAKING: js-controller >= v5, admin >= v6.3.5 e node.js >= v18 sono richiesti",
+                "es": "ÚLTIMA HORA: Se requiere js-controller >= v5, admin >= v6.3.5 y node.js >= v18",
+                "pl": "ŁAMANIE: wymagany jest kontroler js >= v5, admin >= v6.3.5 i node.js >= v18",
+                "uk": "ПОЛИМАННЯ: потрібні js-controller >= v5, admin >= v6.3.5 і node.js >= v18",
+                "zh-cn": "中断：需要 js-controller >= v5、admin >= v6.3.5 且 node.js >= v18"
             }
         },
         "titleLang": {
