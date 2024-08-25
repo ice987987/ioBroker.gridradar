@@ -142,7 +142,7 @@ class Gridradar extends utils.Adapter {
 			this.requestInterval && clearInterval(this.requestInterval);
 
 			callback();
-		} catch (e) {
+		} catch {
 			callback();
 		}
 	}
