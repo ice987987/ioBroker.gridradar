@@ -80,7 +80,6 @@
             "license": "MIT"
         },
         "platform": "Javascript/Node.js",
-        "main": "main.js",
         "icon": "gridradar.svg",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/ice987987/ioBroker.gridradar/main/admin/gridradar.svg",
