@@ -1,6 +1,6 @@
 {
   "name": "iobroker.gridradar",
-  "version": "0.0.3-beta.1",
+  "version": "0.0.3",
   "description": "Frequency Wide Area Monitoring",
   "author": {
     "name": "ice987987",
@@ -17,7 +17,7 @@
     "url": "https://github.com/ice987987/ioBroker.gridradar.git"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">=18"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.1.6",
