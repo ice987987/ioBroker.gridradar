@@ -38,6 +38,9 @@ All product and company names or logos are trademarks™ or registered® tradema
 
 <!-- ### **WORK IN PROGRESS** -->
 
+### 0.0.4 (16.02.2025)
+-   (ice987987) dependencies updated
+
 ### 0.0.3 (01.09.2024)
 
 -   (ice987987) BREAKING: js-controller >= v5.0.19, admin >= v6.3.5 and node.js >= v18 is required
@@ -55,7 +58,7 @@ All product and company names or logos are trademarks™ or registered® tradema
 
 MIT License
 
-Copyright (c) 2024 ice987987 <mathias.frei1@gmail.com>
+Copyright (c) 2025 ice987987 <mathias.frei1@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -14,7 +14,8 @@
 			"xs": 12,
 			"sm": 12,
 			"md": 8,
-			"lg": 8
+			"lg": 8,
+			"xl": 8
 		},
 		"requestInterval": {
 			"newLine": true,
@@ -29,7 +30,8 @@
 			"xs": 12,
 			"sm": 12,
 			"md": 8,
-			"lg": 8
+			"lg": 8,
+			"xl": 8
 		},
 		"metricKey": {
 			"newLine": true,
@@ -38,16 +40,17 @@
 			"options": [
 				{ "label": { "en": "Median of the pmu 1 second mean frequencies" }, "value": "frequency-ucte-median-1s" },
 				{ "label": { "en": "Network time deviation of the UCTE power grid" }, "value": "net-time" }
-			]
+			],
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 8,
+			"xl": 8
 		},
 		"_divider": {
 			"newLine": true,
 			"type": "divider",
-			"color": "primary",
-			"xs": 12,
-			"sm": 12,
-			"md": 8,
-			"lg": 8
+			"color": "primary"
 		},
 		"_helpLink": {
 			"newLine": true,
@@ -57,7 +60,12 @@
 			"variant": "contained",
 			"color": "primary",
 			"button": true,
-			"href": "https://github.com/ice987987/ioBroker.gridradar/blob/main/README.md"
+			"href": "https://github.com/ice987987/ioBroker.gridradar/blob/main/README.md",
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 8,
+			"xl": 8
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "gridradar",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "news": {
             "0.0.1": {
                 "en": "initial release",
@@ -41,6 +41,19 @@
                 "pl": "ŁAMANIE: wymagany jest kontroler js >= v5.0.19, admin >= v6.3.5 i node.js >= v18",
                 "uk": "ЗЛАМА: потрібен js-controller >= v5.0.19, admin >= v6.3.5 і node.js >= v18",
                 "zh-cn": "中断：需要 js-controller >= v5.0.19、admin >= v6.3.5 且 node.js >= v18"
+            },
+            "0.0.4": {
+                "en": "dependencies updated",
+                "de": "Abhängigkeiten aktualisiert",
+                "ru": "Зависимости обновлены",
+                "pt": "dependências atualizadas",
+                "nl": "afhankelijkheden bijgewerkt",
+                "fr": "dépendances mises à jour",
+                "it": "dipendenze aggiornate",
+                "es": "dependencias actualizadas",
+                "pl": "Zależności zaktualizowane",
+                "uk": "залежності оновлені",
+                "zh-cn": "依赖项更新了"
             }
         },
         "titleLang": {

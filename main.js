@@ -50,9 +50,7 @@ class Gridradar extends utils.Adapter {
 		}
 		// check requestInterval
 		if (!this.numberInRange(10, 3600, this.config.requestInterval)) {
-			this.log.error(
-				'"Time interval to retrieve values" is not valid (10s <= t <= 3600s) (ERR_#002)',
-			);
+			this.log.error('"Time interval to retrieve values" is not valid (10s <= t <= 3600s) (ERR_#002)');
 			return;
 		}
 		// check metricKeys
@@ -92,21 +90,20 @@ class Gridradar extends utils.Adapter {
 			method: 'GET',
 			url: 'https://api.gridradar.net/query',
 			params: {
-				'metric': this.config.metricKey
+				metric: this.config.metricKey,
 			},
 			headers: {
-				'Authorization': `Bearer ${this.config.applicationKey}`
+				Authorization: `Bearer ${this.config.applicationKey}`,
 			},
-
 		})
-			.then((response) => {
+			.then(response => {
 				this.log.debug(`[getData]: HTTP status response: ${response.status} ${response.statusText}; config: ${JSON.stringify(response.config)}; headers: ${JSON.stringify(response.headers)}; data: ${JSON.stringify(response.data)}`);
 
 				this.setState(`raw`, { val: JSON.stringify(response.data), ack: true });
 
 				this.setState('info.connection', true, true);
 			})
-			.catch((error) => {
+			.catch(error => {
 				if (error.response) {
 					// The request was made and the server responded with a status code that falls out of the range of 2xx
 					this.log.debug(`[getData]: HTTP status response: ${error.response.status}; headers: ${JSON.stringify(error.response.headers)}; data: ${JSON.stringify(error.response.data)}`);
@@ -127,13 +124,13 @@ class Gridradar extends utils.Adapter {
 			return val <= max;
 		} else if (max === null) {
 			return min <= val;
-		} else {
-			return min <= val && val <= max;
 		}
+		return min <= val && val <= max;
 	}
 
 	/**
 	 * Is called when adapter shuts down - callback has to be called under any circumstances!
+	 *
 	 * @param {() => void} callback
 	 */
 	onUnload(callback) {
@@ -149,6 +146,7 @@ class Gridradar extends utils.Adapter {
 
 	/**
 	 * Is called if a subscribed state changes
+	 *
 	 * @param {string} id
 	 * @param {ioBroker.State | null | undefined} state
 	 */
@@ -168,7 +166,7 @@ if (require.main !== module) {
 	/**
 	 * @param {Partial<utils.AdapterOptions>} [options={}]
 	 */
-	module.exports = (options) => new Gridradar(options);
+	module.exports = options => new Gridradar(options);
 } else {
 	// otherwise start the instance directly
 	new Gridradar();
